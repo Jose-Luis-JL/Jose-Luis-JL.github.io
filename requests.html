@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitudes - TortiSoft</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Solicitudes</h1>
+        <nav>
+            <ul>
+                <li><a href="principal.html">Inicio</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="catalog.html">Catálogo</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="requests.html">Solicitudes</a></li>
+                <li><a href="shipments.html">Envíos</a></li>
+                <li class="cart-icon">
+                    <a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="requests-overview">
+            <div class="request-stats">
+                <p>Número de Solicitudes: <span id="requestCount">0</span></p>
+            </div>
+        </section>
+        <section class="requests-table">
+            <table id="requestsTable">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Mensaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Las solicitudes se agregarán aquí -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 TortiSoft. Todos los derechos reservados.</p>
+    </footer>
+    <script src="requests.js"></script>
+    <script src="session.js"></script>
+
+</body>
+</html>

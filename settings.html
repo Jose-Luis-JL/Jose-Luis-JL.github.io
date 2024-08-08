@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración - TortiSoft</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="settings.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>TortiSoft</h1>
+        <nav>
+            <ul>
+                <li><a href="principal.html">Inicio</a></li>
+                <li><a href="catalog.html">Catálogo</a></li>
+                <li><a href="contact.html">Contáctanos</a></li>
+                <li><a href="requests.html">Solicitudes</a></li>
+                <li><a href="shipments.html">Envíos</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li class="user-menu">
+                    <span id="username-display"></span>
+                    <ul id="user-dropdown" class="dropdown-content">
+                        <li><a href="settings.html">Configuración</a></li>
+                        <li><a href="#" id="logout">Cerrar Sesión</a></li>
+                    </ul>
+                </li>
+                <li class="cart-icon">
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    <span id="cart-count">0</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Configuración de la Cuenta</h2>
+        <form id="settings-form">
+            <label for="new-username">Nombre:</label>
+            <input type="text" id="new-username">
+            <label for="new-phone">Teléfono:</label>
+            <input type="text" id="new-phone">
+            <label for="new-email">Correo:</label>
+            <input type="email" id="new-email">
+            <label for="new-address">Dirección:</label>
+            <input type="text" id="new-address">
+            <button type="submit">Guardar Cambios</button>
+        </form>
+    </main>
+</body>
+</html>
